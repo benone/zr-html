@@ -1,0 +1,7 @@
+.grid_container {
+/*  border:1px solid;*/
+}
+
+.grid_container .item{
+  position: absolute;
+}

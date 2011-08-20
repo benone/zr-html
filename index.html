@@ -3,8 +3,25 @@
   <head>
     <title>ZR-html</title>
     <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/ui/grid.js" type="text/javascript"></script>
+    <script src="js/ui/grid_item.js" type="text/javascript"></script>
+    <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script>
+      $(function(){
+        var grid = new Grid({
+          width : 500,
+          height : 500,
+          colNum : 50,
+          rowNum : 50
+        });
+        grid.render("#content");
+      })
+    </script>
+    
   </head>
   <body>
-    Hello world!
+    <div id="content"></div>
   </body>
 </html>
